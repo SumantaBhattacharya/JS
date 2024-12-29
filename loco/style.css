@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(139, 197, 216, 1);
+    background-image: url("https://i.pinimg.com/564x/f9/e7/ae/f9e7ae952ddc35f736505e31f2b2dc40.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(71, 128, 147);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(24, 65, 78);
+}
+
+#page2 img{
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#parent{
+    background-color: brown;
+}
+

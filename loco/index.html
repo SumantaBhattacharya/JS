@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div class="main" >
+        <div id="page1" data-scroll>
+        </div>
+        <div id="page2" data-scroll data-scroll-speed="-1">
+            <img data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal"
+            src="https://i.pinimg.com/564x/9d/7c/af/9d7caf002efa649234adcec4aadb96fc.jpg" alt="">
+            <img data-scroll data-scroll-speed="3" data-scroll-direction="horizontal" src="https://i.pinimg.com/236x/d0/fb/5a/d0fb5a8164671b822cad5f65281c805c.jpg" alt="">
+        </div>
+        <div id="page3" data-scroll>
+            <div id="parent"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
+<!-- locomotive js 
+Element attributes
+Instance methods
+locomotive vs bets 
+locomotive with react
+data-scroll-container
+https://github.com/locomotivemtl/locomotive-scroll
+    lerp: 0.1,
+    smoothMobile: true,
+    speed: 1000,
+    direction: 'horizontal',
+    getScrollTopOnUpdate: true
+    GreenSock Animation Platform
+    Content delevery Network
+    https://cdnjs.com/libraries/gsap
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/
+    https://github.com/locomotivemtl/locomotive-scroll-smooth
+-->
