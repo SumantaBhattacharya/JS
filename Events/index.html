@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <ul id="images">
+        <li>
+            <img style="border: 2px solid black;" width="200px" id="photoshop" src="https://i.pinimg.com/236x/3b/57/75/3b577577388270bf0247ff5d2d105fbb.jpg" alt="photoshop">
+        </li>
+        <li >
+            <img style="border: 2px solid black;" width="200px" id="japan" style="cursor: pointer;" src="https://i.pinimg.com/236x/df/27/11/df2711e59703e66a19317d90034898f7.jpg" alt="">
+        </li>
+        <li>
+            <img style="border: 2px solid black;" width="200px" id="river" style="cursor: pointer;" src="https://i.pinimg.com/236x/96/dc/75/96dc75f977246229d3493aad294a18d9.jpg" alt="">
+        </li>
+        <li>
+            <img style="border: 2px solid black;" width="200px" id="owl" style="cursor: pointer;" src="https://i.pinimg.com/236x/c1/55/b3/c155b378b90678c4f03e67bf1c001e3f.jpg" alt="photoshop">
+        </li>
+        <li>
+            <img style="border: 2px solid black;" width="200px" id="prayer" style="cursor: pointer;" src="https://i.pinimg.com/236x/3a/39/92/3a3992ae3a2904a5f243a42f7da219dd.jpg" alt="">
+        </li>
+        <li>
+            <a style="color: aliceblue; text-decoration: none; font-size: 6rem; font-weight: 800;" href="https://google.com" id="google">Google</a>
+        </li>
+    </ul>
+    <script src="test.js"></script>
+</body>
+</html>
+
+<!-- Events in JS 
+The change in the state of an object is known as an Event
+Events are fired to notify code of "interesting changes " that may affect code extension
+Mouse events(click,double click(dblclick))
+Keyboard events (Keypress,keyup,Keydown)
+Form events (submit etc)
+Print event and many more
+
+Event Handling in JS
+node.event = () => {
+    console.log();
+}
+
+javascript has more priority than inside js in html
+
+Event Object
+It is a special object that has details about the event 
+All event handlers have access to the event object's properties and methods
+node.event = (e) => {
+    //handle here
+}
+e.target,e.type,e.clientX,e.clientY
+
+Event Listener
+node.addEventListener(event,callback)//callback ia s function 
+node.removeEventListener(event,callback)//call back - event handler
+//body.classlist.add("dark")
+//body.classlist.remove("light")
+// callback is the part where basically function takes place
+*Node: the callback reference should be same to remove 
+advantages are
+less bulky,maintanence
+looks clean,clearer syntax
+less error prone
+considered as good practice
+Allows you to attach multiple event listeners to a single event type on a given element.
+element.addEventListener('click', function1);
+element.addEventListener('click', function2);
+
+In JavaScript, both `addEventListener` and directly assigning an event to an element using the `on` property can be used to handle events, but they have some differences in terms of flexibility and best practices.
+
+1. **Multiple Event Listeners:**
+   - **`addEventListener`:** Allows you to attach multiple event listeners to a single event type on a given element. This is particularly useful when you want to handle the same event in different ways or by different functions.
+   ```javascript
+   element.addEventListener('click', function1);
+   element.addEventListener('click', function2);
+   ```
+
+   - **Direct Event Assignment (`on` property):** Overwrites any existing event handler for that event type on the element. If you assign a new event handler using `element.onclick = function1`, it will replace any previously assigned click event handler.
+
+2. **Clearer Separation of Concerns:**
+   - **`addEventListener`:** Promotes a cleaner separation of concerns by allowing you to attach event listeners without modifying the HTML or other JavaScript code. This is especially useful in modern web development where you might have multiple scripts or libraries interacting with the same page.
+
+   - **Direct Event Assignment (`on` property):** Modifying the `on` property directly could lead to code that is less modular and harder to maintain, as the event handling logic is mixed with other code.
+
+3. **Best Practice and Compatibility:**
+   - **`addEventListener`:** Considered a best practice in modern JavaScript development. It is the preferred method because it allows for more flexibility, better compatibility with various libraries, and avoids potential issues related to overwriting existing event handlers.
+
+   - **Direct Event Assignment (`on` property):** While still valid, it is often considered less flexible and more prone to issues in complex applications where multiple scripts may be interacting with the same page.
+
+In summary, `addEventListener` is generally recommended due to its flexibility and ability to work well in various scenarios, making it a more modern and maintainable approach for handling events in JavaScript.
+
+In the context of addEventListener in JavaScript, the callback refers to the function that gets executed when the specified event occurs on the given node (element). Here's a breakdown of how it works:
+
+javascript
+Copy code
+node.addEventListener(event, callback);
+node: This is the DOM element to which you want to attach the event listener.
+
+event: This is a string representing the type of event you want to listen for, such as 'click', 'mouseover', 'keydown', etc. The event is what triggers the callback function.
+
+callback: This is a function that will be called when the specified event occurs on the node. The function is often referred to as a "callback" because it is a function that gets called back in response to an event.
+-->
