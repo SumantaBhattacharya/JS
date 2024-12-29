@@ -1,0 +1,147 @@
+<!-- // xml http request
+    Asynchronous JavaSCript and XML or Ajax is not a technology in itselft, but rather an aproacg of using a number
+    of existing technologies including Html,XHTML,CSS,JavaScript,DOM,XML,XSLT and most importantlt the XML http request
+    Ready state property
+    value  State                   description
+    0      UNSENT                  Client has created open() not called yet.
+    1      OPENED                  open() has been called
+    2      HEADERS_RECIEVED        send() has been called, and headers and status are available,status not recieved
+    3      LOADING                 Downloading; reponseText holds partial data.  
+    4      DONE                    The operation is complite
+
+    {
+  "login": "SumantaBhattacharya",
+  "id": 148477304,
+  "node_id": "U_kgDOCNmVeA",
+  "avatar_url": "https://avatars.githubusercontent.com/u/148477304?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/SumantaBhattacharya",
+  "html_url": "https://github.com/SumantaBhattacharya",
+  "followers_url": "https://api.github.com/users/SumantaBhattacharya/followers",
+  "following_url": "https://api.github.com/users/SumantaBhattacharya/following{/other_user}",
+  "gists_url": "https://api.github.com/users/SumantaBhattacharya/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/SumantaBhattacharya/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/SumantaBhattacharya/subscriptions",
+  "organizations_url": "https://api.github.com/users/SumantaBhattacharya/orgs",
+  "repos_url": "https://api.github.com/users/SumantaBhattacharya/repos",
+  "events_url": "https://api.github.com/users/SumantaBhattacharya/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/SumantaBhattacharya/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": null,
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 2,
+  "public_gists": 0,
+  "followers": 0,
+  "following": 0,
+  "created_at": "2023-10-19T16:01:08Z",
+  "updated_at": "2024-02-05T16:01:06Z"
+}
+
+{"results":[{"gender":"female","name":{"title":"Mrs","first":"Esperanza","last":"Zapata"},"location":{"street":{"number":7564,"name":"Viaducto Tamayo"},"city":"Ojo de Agua de Palmillas","state":"Zacatecas","country":"Mexico","postcode":35900,"coordinates":{"latitude":"23.6385","longitude":"46.4201"},"timezone":{"offset":"+9:30","description":"Adelaide, Darwin"}},"email":"esperanza.zapata@example.com","login":{"uuid":"5faecf8f-4574-443a-9737-dbb7503d1809","username":"heavyswan733","password":"celtics","salt":"uDstoPeE","md5":"4650d0c19c84777bf005414f44fcba9a","sha1":"54fdfbb737410a4ba7549be2f94ebec87e84ff4f","sha256":"b6415e6180d896604aa8e27aa83f102d01c4857e3342ff4dae8bae570302e0b1"},"dob":{"date":"1986-08-19T17:50:59.925Z","age":37},"registered":{"date":"2011-11-26T16:37:04.656Z","age":12},"phone":"(602) 815 0554","cell":"(610) 107 3425","id":{"name":"NSS","value":"13 86 71 4999 9"},"picture":{"large":"https://randomuser.me/api/portraits/women/32.jpg","medium":"https://randomuser.me/api/portraits/med/women/32.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/32.jpg"},"nat":"MX"}],"info":{"seed":"be56173a1d666ab2","results":1,"page":1,"version":"1.4"}}
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Esperanza",
+        "last": "Zapata"
+      },
+      "location": {
+        "street": {
+          "number": 7564,
+          "name": "Viaducto Tamayo"
+        },
+        "city": "Ojo de Agua de Palmillas",
+        "state": "Zacatecas",
+        "country": "Mexico",
+        "postcode": 35900,
+        "coordinates": {
+          "latitude": "23.6385",
+          "longitude": "46.4201"
+        },
+        "timezone": {
+          "offset": "+9:30",
+          "description": "Adelaide, Darwin"
+        }
+      },
+      "email": "esperanza.zapata@example.com",
+      "login": {
+        "uuid": "5faecf8f-4574-443a-9737-dbb7503d1809",
+        "username": "heavyswan733",
+        "password": "celtics",
+        "salt": "uDstoPeE",
+        "md5": "4650d0c19c84777bf005414f44fcba9a",
+        "sha1": "54fdfbb737410a4ba7549be2f94ebec87e84ff4f",
+        "sha256": "b6415e6180d896604aa8e27aa83f102d01c4857e3342ff4dae8bae570302e0b1"
+      },
+      "dob": {
+        "date": "1986-08-19T17:50:59.925Z",
+        "age": 37
+      },
+      "registered": {
+        "date": "2011-11-26T16:37:04.656Z",
+        "age": 12
+      },
+      "phone": "(602) 815 0554",
+      "cell": "(610) 107 3425",
+      "id": {
+        "name": "NSS",
+        "value": "13 86 71 4999 9"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/32.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/32.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/32.jpg"
+      },
+      "nat": "MX"
+    }
+  ],
+  "info": {
+    "seed": "be56173a1d666ab2",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ajax reques
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/SumantaBhattacharya';
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function() {//use a regular function for this purpose.
+      console.log(xhr.readyState);
+
+      if (xhr.readyState === 4){
+        const data = JSON.parse(this.responseText);
+        console.log(data);
+        console.log(typeof(data));
+        console.log(data.followers);
+      }
+    }
+    xhr.send()
+</script>
+</html>
+<!-- node js is a implementation of v8 engine made by c++
+     
+-->
+
+
