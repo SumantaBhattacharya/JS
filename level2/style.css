@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.main{
+    height: 85%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    padding: 5vw 3vw;
+}
+
+.left{
+    height: 100%;
+    width: 45%;
+    background-color: #333;
+    /* background-image: url("https://bollywoodmizaz.com/wp-content/uploads/2023/12/Pehle-Bhi-Main-Lyrics-1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.right{
+    height: 100%;
+    width: 55%;
+    padding: 0 3vw;
+
+}
+
+.right h3{
+    font-size: 5vw;
+}
+
+.all-songs{
+    height: 70%;
+    margin-top: 3rem;
+    overflow-y: auto;
+}
+
+.all-songs::-webkit-scrollbar{
+    display: none;
+}
+
+
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+}
+
+.song-card:hover{
+    background-color: #8f0808;
+}
+
+.song-card .part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.song-card img{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.song-card h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.song-card h6{
+    font-size: 0.85rem;
+}
+
+.player{
+    height: 15%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.player h3{
+    background-color: red;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+}
+
+.player h3:active{
+    scale: 0.9;
+}
