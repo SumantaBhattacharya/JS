@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'BatmanForever';
+    src: url('./Fonts/batmfa__.ttf') format('truetype');
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif; /* Fallback to a generic sans-serif font */
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cursor {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s;
+    mix-blend-mode: difference;
+}
+
+h1{
+    font-size: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'BatmanForever', sans-serif;
+}
