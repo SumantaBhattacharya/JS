@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="msg-container hide">
+        <p id="message">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <main class="main">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <div>
+            <button id="reset-btn">Reset Game</button> 
+        </div>
+    </main>
+    <script src="test.js"></script>
+</body>
+
+</html>
+<!-- 
+
+pseudo class
+
+:hover
+:active i.e clicked
+:checked ->used for check boxes and radio buttons
+
+input[type="radio"]:checked + label{
+    background-color: red;
+}
+
+div:nth of type(2){
+
+}
+
+div:nth of type(2n){//Every second color element is changed
+
+}
+flex-sizing
+flex-basis:
+flex sizing it sets the initial main size of the flex item-individually
+it does have any units
+flex-grow:
+It specifies how much of the flex container's Remaining space should be assigned to the flex item's main size
+buy defauld its value is 1 eg flex-grow: 1
+it doesnt have any units
+max-width
+flex-shrink:
+default flex-shrink
+it doesnt have any units
+flex shorthand:
+flex: flex-grow flex-shrink flex-basis
+flex:  flex-grow flex-basis
+flex: flex-basis(units)
+flex: flex-basis(no-units)
+span inside div only takes left and right values for both margin and padding
+line height: 1*normal
+1 inch is 96 px
+disadvantage of em is snowball effect
+flex box is for i direction
+but grid is for 2D
+setting a container's display to grid will make all children grid items
+Grid Template
+They define the line & track sizing of the grid container
+grid-template-rows
+grid-template-colums
+numbers of lines are +1 than track
+
+css animation:
+@keyframes name{
+    from
+    {
+
+    }
+    to{
+
+    }
+
+    or
+
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+}
+
+animation-name
+animation-duration: second/'s'
+animation-delay: s
+animation-iteration-count
+animation-direction:normal,alternate
+animation-timing-function:ease,ease-in
+
+animation:animation-name,animation-duration,animation-timing-function,animation-delay,animation-directio
+
+orientatation or min max
+
+@media(min-width: ) and (max-width:){
+
+}
+
+@media(orientation:landscape or portrait){
+
+}
+
+bydefault z-index value is 1/auto
+if the position is static then z index value will not apply
+
+css grid
+Setting a container's display to grid will make all children grid items
+container{
+    diplay: grid;
+
+}
+
+[ [] []grid items ]
+[ []              ]grid container
+
+
+
+ -->

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #548687;/*https://coolors.co/*/
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main{
+    position: relative;
+}
+
+.container {
+    height: 70vh;/*view port height*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    height: 60vmin;/*one % of the vieport smaller dimension */;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow:  0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;/*4fc7*/
+    font-weight: 900;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#message {
+    font-size: 5vmin;
+    font-weight: 600;
+    color: #ffffc7;
+
+}
+
+.msg-container{
+    height: 30vmin;
+}
+
+
+.hide{
+    display: none;
+}
+
+/*
+____________________________
+|                          |
+|70%  60% 18%              |
+|__________________________|
+0,1,2 | 3,4,5 | 6,7,8 | 0,3,6 | 1,4,7 | 2,5,8 | 0,4,8 | 2,4,6
+0: This represents the horizontal offset of the shadow. In this case, the shadow is directly behind the element with no horizontal offset.
+
+0: This represents the vertical offset of the shadow. Similarly, in this case, the shadow is directly above the element with no vertical offset.
+
+1rem: This specifies the blur radius of the shadow. In this case, the shadow has a blur radius of 1rem. The larger the blur radius, the more spread out and softer the shadow will be.
+
+rgba(0, 0, 0, 0.1): This sets the color of the shadow. In this case, it's a semi-transparent black color. The rgba stands for Red, Green, Blue, and Alpha (transparency), and the values are specified in the range of 0 to 255. The color is black with 0.1 (10%) opacity.
+*/
