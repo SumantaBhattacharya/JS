@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif; /* Fallback to a generic sans-serif font */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;/*When overflow is set to hidden, any content that exceeds the dimensions of the container will be clipped or hidden.*/
+}
+
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container i{
+    color: #ff0000;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    /*opasity: 0 */
+    opacity: 0.8;
+    transition: transform ease 0.4s;
+}
+
