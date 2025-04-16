@@ -1,0 +1,78 @@
+/* @font-face {
+    font-family: 'HarabaraMais';
+    src: url('./Fonts/harabara mais demo.otf') format('opentype');
+}   */
+
+/* @font-face {
+    font-family: 'HarabaraMais';
+    src: url('./Fonts/harabara-mais-demo.ttf') format('truetype');
+  }
+   */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy', sans-serif;
+    /* font-family: 'HarabaraMais', sans-serif; */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    align-content: center;/* it should be align-items */
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+.card{
+    border-radius: 10px;
+    margin-top:12%; /*if its is align-items then there is no need of this line */
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.card img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 11px;
+
+}
+
+.card h1{
+    font-size: 25px;
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: 600;
+    /* font-family: 'HarabaraMais', sans-serif; */
+}
+
+.card h5{
+    font-size: 19px;
+    color: red;
+    margin: 20px;
+    font-weight: 700;
+}
+
+.card button{
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.card .remove{
+    background-color: #dadada;
+    color: #111;
+}
