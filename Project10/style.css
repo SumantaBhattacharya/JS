@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-family: 'Bangers', cursive;
+
+}
+
+.choice {
+    height: 10.3125rem;   /* 100px / 16px = 6.25rem */
+    width: 10.3125rem;   
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+    background-color: #081b31;
+    cursor: pointer;
+}
+
+img {
+    height: 9.375rem;   /* 100px / 16px = 6.25rem */
+    width: 9.375rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+#user-score #comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    /* margin-top: 5rem; */
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px soloid black;
+}
+
+/* Add a media query to make adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust as needed */
+    }
+
+    .choice {
+        height: 6rem; /* Adjust as needed */
+        width: 5rem; /* Adjust as needed */
+        border-radius: 50%;
+    }
+    img {
+        height: 5.5rem; /* Adjust as needed */
+        width: 5.5rem; /* Adjust as needed */
+        border-radius: 50%;
+    }
+
+    .score-board {
+        font-size: 1.6rem; /* Adjust as needed */
+    }
+
+    #msg {
+        font-size: 1rem; /* Adjust as needed */
+        padding: 0.3rem 0.6rem; /* Adjust padding as needed */
+    }
+
+
+}
+
+
+
+/*pseudo class
+A keyword added to a selector that specifies a special state ofthe selected elements
+:hover
+:active
+:checked
+:nth-of-type
+CSS Example:
+css
+Copy code
+p:nth-child(even) {
+    background-color: lightgray;
+}
+ul li:nth-child(3) {
+    color: blue;
+}
+In the CSS example:
+
+p:nth-child(even): Selects every even (2nd, 4th, 6th, etc.) <p> element.
+ul li:nth-child(3): Selects the third <li> element inside every <ul>.
+JavaScript Example:
+javascript
+Copy code
+// Select all even elements and change their text color
+const evenElements = document.querySelectorAll(':nth-child(even)');
+evenElements.forEach(element => {
+    element.style.color = 'red';
+});
+
+// Select the third paragraph and change its background color
+const thirdParagraph = document.querySelector('p:nth-child(3)');
+thirdParagraph.style.backgroundColor = 'yellow';
+In the JavaScript example:
+
+:nth-child(even): Uses the :nth-child pseudo-class to select all even elements.
+p:nth-child(3): Uses the :nth-child pseudo-class to select the third <p> element.
+Note: When using :nth-child in JavaScript, keep in mind that the index is 1-based, unlike in CSS where it's 1-based for humans but 0-based for JavaScript (when using querySelectorAll).
+
+padding 
+top|left and right | bottom
+
+*/
