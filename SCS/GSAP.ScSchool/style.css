@@ -1,0 +1,151 @@
+/* Define a font face with the font file path */
+@font-face {
+  font-family: "QueLindo";
+  src: url("path/to/que-lindo-font.woff2") format("woff2"),
+    url("path/to/que-lindo-font.woff") format("woff");
+  /* Add additional font formats if necessary */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: "QueLindo", sans-serif;
+}
+
+.page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 0 2rem;
+}
+.page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav{
+    height:  6.25rem;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-part2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-part2 ul {
+    gap:  2.5rem;
+    display: flex;
+}
+
+.nav-part2 li {
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 500;
+}
+
+.nav-part2 a {
+    text-decoration: none;
+}
+
+.nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container{
+    margin-top: 20px;
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 50px 50px 50px 10px;
+    align-items: center;
+    
+}
+
+.left span img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -25px;
+    border: 3px solid black;
+}
+
+.left span span img :nth-child(1) {
+    margin-left: 0;
+}
+
+.left span img:nth-last-child(1) {
+    margin-left: 2px;
+}
+
+
+.left h1{
+    text-transform: uppercase;
+    font-size: 5.9375rem;
+    font-weight: 500;
+    line-height: 5.9375rem;
+}
+
+.left h1,
+.left span {
+    display: inline; /* Make h1 and span display inline */
+}
+
+.right{
+    margin-left: 12rem;
+    height: 100%;
+    width: 50%;
+    padding: 50px 50px 50px 10px;
+    overflow: hidden;
+}
+
+.right img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.box{
+    height: 250px;
+    width: 400px;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+}
+
+.box h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box p{
+    color: #dadada;
+    font-size: 1rem;
+    font-weight: 600
+}
