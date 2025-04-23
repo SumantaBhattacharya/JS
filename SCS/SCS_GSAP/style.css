@@ -1,0 +1,119 @@
+
+/* Define a font face with the font file path */
+@font-face {
+    font-family: "head";
+    src: url(./Heading-Now-Variable.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: "head";
+    
+}
+
+.loader{
+    height:100vh;
+    width: 100%;
+    background-color: rgb(224, 226, 233);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader h1{
+    font-size:3.75rem;
+    color: #000;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page1 h1{
+    font-size: 40vw;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-stretch: 250%;
+    overflow: hidden;
+    font-weight: 900;
+    line-height: 1.2;
+
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(144, 45, 45);
+}
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.cursor {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s;
+    mix-blend-mode: difference;
+    display: none; /* Initially hide the cursor */
+}
+
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:  8rem;
+    width: 100%;
+    font-size: 4rem;
+    background-color: #000;
+    padding: 50px;
+}
+
+.nav img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav ul {
+    gap:  2.5rem;
+    display: flex;
+}
+
+.nav li {
+    cursor: pointer;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.nav-part2 a {
+    text-decoration: none;
+}
+
+.nav li:hover {
+    color: #ffcc00; /* Change to your desired hover color */
+    border-bottom: 2px solid white;
+}
